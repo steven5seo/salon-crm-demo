@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Salon CRM Demo | Franchise Marketing Reinvented</title>
+    <meta
+      name="description"
+      content="See how our salon CRM powers multi-location growth: capture leads, segment guests, and launch campaigns in minutes."
+    />
+    <meta property="og:title" content="Salon CRM Demo — Franchise Marketing Reinvented" />
+    <meta
+      property="og:description"
+      content="Walk through the lead-to-loyalty journey for a salon franchise. Capture leads, segment by interest, and preview VIP campaigns."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://org.github.io/salon-crm-demo/" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1519415943484-9fa1873496ac?auto=format&fit=crop&w=1200&q=80" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Salon CRM Demo — Franchise Marketing Reinvented" />
+    <meta
+      name="twitter:description"
+      content="Unlock high-performing campaigns for every salon location with our CRM demo."
+    />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1519415943484-9fa1873496ac?auto=format&fit=crop&w=1200&q=80" />
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f487-200d-2640-fe0f.svg" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Material+Symbols+Rounded" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.4/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} // eslint-disable-line
+    </script>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <a href="#main" class="absolute left-4 top-4 bg-white text-charcoal-900 px-3 py-2 rounded-full shadow focus:not-sr-only sr-only focus:sr-only">Skip to main content</a>
+    <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b border-sand-100">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex items-center justify-between py-4">
+          <a href="index.html" class="flex items-center gap-3 text-xl font-semibold text-charcoal-900">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-rose-500 text-white">
+              <span class="material-symbols-rounded" aria-hidden="true">content_cut</span>
+            </span>
+            Elevate CRM
+          </a>
+          <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-charcoal-700">
+            <a href="index.html" class="hover:text-rose-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-500">Home</a>
+            <a href="services.html" class="hover:text-rose-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-500">Services</a>
+            <a href="stylists.html" class="hover:text-rose-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-500">Stylists</a>
+            <a href="locations.html" class="hover:text-rose-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-500">Locations</a>
+            <a href="testimonials.html" class="hover:text-rose-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-500">Testimonials</a>
+            <a href="#lead" class="hover:text-rose-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-500">Contact</a>
+          </nav>
+          <div class="flex items-center gap-4">
+            <a href="#lead" class="hidden md:inline-flex primary-btn text-sm">Get a free consultation</a>
+            <button id="nav-toggle" class="md:hidden inline-flex items-center justify-center p-2 rounded-full border border-sand-200 text-charcoal-700" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation">
+              <span class="material-symbols-rounded" aria-hidden="true">menu</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden border-t border-sand-100 bg-white/95">
+        <nav class="px-4 py-4 flex flex-col gap-3 text-sm font-medium text-charcoal-700">
+          <a href="index.html" class="hover:text-rose-600">Home</a>
+          <a href="services.html" class="hover:text-rose-600">Services</a>
+          <a href="stylists.html" class="hover:text-rose-600">Stylists</a>
+          <a href="locations.html" class="hover:text-rose-600">Locations</a>
+          <a href="testimonials.html" class="hover:text-rose-600">Testimonials</a>
+          <a href="#lead" class="hover:text-rose-600">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="flex-1">
+      <section class="bg-hero">
+        <div class="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <span class="inline-flex items-center gap-2 rounded-full bg-rose-100 text-rose-600 px-4 py-1 text-sm font-medium">
+              <span class="material-symbols-rounded text-rose-500" aria-hidden="true">stars</span>
+              Built for multi-location salon leaders
+            </span>
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight text-charcoal-900">
+              Own every guest journey—from first visit to lifelong member.
+            </h1>
+            <p class="text-lg text-charcoal-600 max-w-xl">
+              Elevate CRM gives your franchise team a single playbook: capture leads, segment intelligently, and activate color,
+              cut, and membership campaigns in minutes—no IT lift required.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="#lead" class="primary-btn">Get a free consultation</a>
+              <a href="services.html" class="inline-flex items-center gap-2 font-semibold text-rose-600 hover:text-rose-700">
+                View services
+                <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+              </a>
+            </div>
+            <div class="flex flex-wrap gap-6 pt-6 text-sm text-charcoal-600">
+              <span class="inline-flex items-center gap-2"><span class="material-symbols-rounded text-rose-500" aria-hidden="true">group</span>4.7M guest profiles unified</span>
+              <span class="inline-flex items-center gap-2"><span class="material-symbols-rounded text-rose-500" aria-hidden="true">schedule</span>15% faster rebooking</span>
+              <span class="inline-flex items-center gap-2"><span class="material-symbols-rounded text-rose-500" aria-hidden="true">paid</span>22% lift in VIP revenue</span>
+            </div>
+          </div>
+          <div class="gradient-border">
+            <div class="inner p-1">
+              <div class="bg-white rounded-[1.9rem] overflow-hidden shadow-xl">
+                <img
+                  src="https://images.unsplash.com/photo-1522336572468-97b06e8ef143?auto=format&fit=crop&w=1200&q=80"
+                  alt="Salon team collaborating"
+                  class="w-full h-72 object-cover"
+                  loading="lazy"
+                  width="600"
+                  height="400"
+                />
+                <div class="p-6 space-y-4">
+                  <h2 class="text-2xl font-semibold text-charcoal-900">Demo the franchise growth playbook</h2>
+                  <ul class="space-y-3 text-charcoal-600">
+                    <li class="flex gap-3"><span class="material-symbols-rounded text-rose-500" aria-hidden="true">check</span>Lead routing by location & expertise</li>
+                    <li class="flex gap-3"><span class="material-symbols-rounded text-rose-500" aria-hidden="true">check</span>VIP segmentation + win-back scoring</li>
+                    <li class="flex gap-3"><span class="material-symbols-rounded text-rose-500" aria-hidden="true">check</span>Email & SMS previews ready for showtime</li>
+                  </ul>
+                  <a href="demo.html" class="inline-flex items-center gap-2 font-semibold text-rose-600 hover:text-rose-700">Preview the dashboard<span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16 bg-sand-50 border-y border-sand-100">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="grid md:grid-cols-3 gap-10">
+            <div>
+              <p class="text-sm uppercase tracking-wider text-charcoal-500">Trusted by franchise innovators</p>
+              <h2 class="section-heading mt-3">Designed for scale across 120+ salons</h2>
+            </div>
+            <div class="md:col-span-2 grid sm:grid-cols-2 gap-6">
+              <article class="bg-white rounded-3xl border border-sand-200 p-6 shadow-sm">
+                <h3 class="text-lg font-semibold text-charcoal-900">Location intelligence</h3>
+                <p class="mt-2 text-charcoal-600">Stack rank salons by member growth, stylist capacity, and campaign health to drive weekly standups.</p>
+              </article>
+              <article class="bg-white rounded-3xl border border-sand-200 p-6 shadow-sm">
+                <h3 class="text-lg font-semibold text-charcoal-900">Guest segmentation</h3>
+                <p class="mt-2 text-charcoal-600">Drag-and-drop filters for interest, visit cadence, and memberships—instant reach totals for your pitch.</p>
+              </article>
+              <article class="bg-white rounded-3xl border border-sand-200 p-6 shadow-sm">
+                <h3 class="text-lg font-semibold text-charcoal-900">Campaign previews</h3>
+                <p class="mt-2 text-charcoal-600">Showcase polished email and SMS mockups with merge tags ready for AE storytelling.</p>
+              </article>
+              <article class="bg-white rounded-3xl border border-sand-200 p-6 shadow-sm">
+                <h3 class="text-lg font-semibold text-charcoal-900">Actionable analytics</h3>
+                <p class="mt-2 text-charcoal-600">GA4 events track demo engagement so marketing can optimize the narrative.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20" aria-labelledby="testimonials-heading">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+            <div>
+              <h2 id="testimonials-heading" class="section-heading">Franchise leaders love the momentum</h2>
+              <p class="text-charcoal-600 mt-3 max-w-xl">Real-world operators use our CRM demo to align owners, stylists, and marketing around a single guest playbook.</p>
+            </div>
+            <div class="text-sm text-charcoal-500">Carousel auto-rotates every 6 seconds. Pause by hovering or focus.</div>
+          </div>
+          <div id="testimonial-wrapper" class="relative overflow-hidden rounded-3xl border border-sand-200 bg-white/50" tabindex="0">
+            <div id="testimonial-track" class="flex transition-transform duration-500" data-active-index="0"></div>
+            <div class="flex justify-center gap-3 py-6" id="testimonial-indicators" role="tablist" aria-label="Testimonials"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 bg-sand-50 border-y border-sand-100" id="lead">
+        <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-start">
+          <div class="space-y-6">
+            <h2 class="section-heading">Let’s map your franchise growth in 30 minutes</h2>
+            <p class="text-charcoal-600">Share a few details and an Elevate growth specialist will personalize the dashboard tour for your brand.</p>
+            <div class="bg-white rounded-3xl border border-sand-200 p-6 space-y-4">
+              <h3 class="text-lg font-semibold text-charcoal-900">What you’ll get</h3>
+              <ul class="space-y-3 text-charcoal-600">
+                <li class="flex gap-3"><span class="material-symbols-rounded text-rose-500" aria-hidden="true">check_circle</span>Lead capture to campaign walkthrough</li>
+                <li class="flex gap-3"><span class="material-symbols-rounded text-rose-500" aria-hidden="true">check_circle</span>Location & stylist playbook templates</li>
+                <li class="flex gap-3"><span class="material-symbols-rounded text-rose-500" aria-hidden="true">check_circle</span>Success metrics you can copy into board decks</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div id="lead-errors" class="hidden mb-4 rounded-2xl border border-red-200 bg-red-50 text-red-700 px-4 py-3" role="alert" aria-live="assertive"></div>
+            <form id="lead-form" class="bg-white rounded-3xl border border-sand-200 shadow-lg p-8 space-y-6" aria-describedby="lead-summary">
+              <div class="grid md:grid-cols-2 gap-4">
+                <label class="block text-sm font-medium text-charcoal-700"
+                  >First name
+                  <input type="text" name="firstName" class="mt-1 w-full rounded-2xl border border-sand-200 px-4 py-3" autocomplete="given-name" required />
+                </label>
+                <label class="block text-sm font-medium text-charcoal-700"
+                  >Last name
+                  <input type="text" name="lastName" class="mt-1 w-full rounded-2xl border border-sand-200 px-4 py-3" autocomplete="family-name" required />
+                </label>
+              </div>
+              <label class="block text-sm font-medium text-charcoal-700"
+                >Work email
+                <input type="email" name="email" class="mt-1 w-full rounded-2xl border border-sand-200 px-4 py-3" autocomplete="email" required />
+              </label>
+              <label class="block text-sm font-medium text-charcoal-700"
+                >Phone (optional)
+                <input type="tel" name="phone" class="mt-1 w-full rounded-2xl border border-sand-200 px-4 py-3" autocomplete="tel" />
+              </label>
+              <label class="block text-sm font-medium text-charcoal-700"
+                >Preferred location
+                <select name="preferredLocation" id="preferredLocation" class="mt-1 w-full rounded-2xl border border-sand-200 px-4 py-3" required>
+                  <option value="">Select a location</option>
+                </select>
+              </label>
+              <label class="block text-sm font-medium text-charcoal-700"
+                >Interested services
+                <select name="interestedServices" id="interestedServices" class="mt-1 w-full rounded-2xl border border-sand-200 px-4 py-3" multiple size="4" aria-describedby="services-help">
+                </select>
+                <p id="services-help" class="mt-1 text-xs text-charcoal-500">Hold Cmd/Ctrl to select multiple services.</p>
+              </label>
+              <label class="flex items-start gap-3 text-sm text-charcoal-600">
+                <input type="checkbox" name="marketingConsent" class="mt-1" />
+                <span>I’m okay receiving demo emails and SMS about Elevate CRM (you can opt out anytime).</span>
+              </label>
+              <button type="submit" class="primary-btn w-full justify-center">Submit lead</button>
+            </form>
+            <div id="lead-success" class="hidden bg-white rounded-3xl border border-sand-200 shadow-lg p-8 space-y-4" role="status" aria-live="polite">
+              <div class="flex items-center gap-3 text-rose-600 font-semibold">
+                <span class="material-symbols-rounded" aria-hidden="true">celebration</span>
+                Lead captured
+              </div>
+              <p id="lead-summary" class="text-charcoal-700"></p>
+              <div id="lead-next-steps" class="hidden space-y-3 text-charcoal-600">
+                <p class="font-semibold text-charcoal-900">Next steps</p>
+                <ol class="list-decimal pl-5 space-y-2">
+                  <li>Your lead appears instantly in the demo dashboard (<a href="demo.html" class="text-rose-600">open demo</a>).</li>
+                  <li>Apply a segment like “Color + Downtown” to show reach.</li>
+                  <li>Preview a VIP email and SMS with your custom offer.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8 items-center">
+          <div class="md:col-span-2">
+            <h2 class="section-heading">Scale consistency without sacrificing personal touch</h2>
+            <p class="mt-4 text-charcoal-600">Elevate CRM wraps your marketing ops, stylists, and owners around a single data layer. Build trust with consistent journeys from lead to loyalist.</p>
+          </div>
+          <a href="demo.html" class="primary-btn justify-center">Tour the demo dashboard</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-charcoal-900 text-sand-50">
+      <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8 text-sm">
+        <div class="space-y-3">
+          <p class="text-base font-semibold text-white">Elevate CRM for Salons</p>
+          <p class="text-sand-200">Simulated data for demo purposes only. No personal information stored on servers.</p>
+        </div>
+        <div class="space-y-3">
+          <p class="font-semibold text-white">Franchise resources</p>
+          <ul class="space-y-2 text-sand-200">
+            <li><a href="services.html" class="hover:text-white">Services & Pricing</a></li>
+            <li><a href="locations.html" class="hover:text-white">Locations</a></li>
+            <li><a href="stylists.html" class="hover:text-white">Stylists</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <p class="font-semibold text-white">Company</p>
+          <ul class="space-y-2 text-sand-200">
+            <li><a href="privacy.html" class="hover:text-white">Privacy</a></li>
+            <li><a href="terms.html" class="hover:text-white">Terms</a></li>
+            <li><a href="mailto:demo@elevatecrm.com" class="hover:text-white">Contact sales</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <p class="font-semibold text-white">Connect</p>
+          <div class="flex gap-4 text-xl text-sand-200">
+            <a href="https://www.linkedin.com" aria-label="LinkedIn" class="hover:text-white">in</a>
+            <a href="https://www.instagram.com" aria-label="Instagram" class="hover:text-white">IG</a>
+            <a href="https://www.tiktok.com" aria-label="TikTok" class="hover:text-white">TT</a>
+          </div>
+          <a href="demo.html" class="text-sand-200 hover:text-white text-xs" rel="nofollow">Demo dashboard</a>
+        </div>
+      </div>
+      <div class="px-4 py-4 text-center text-xs text-sand-400">© 2025 Elevate CRM Demo. Crafted for showcase purposes.</div>
+    </footer>
+
+    <script src="scripts/navigation.js" type="module"></script>
+    <script src="scripts/testimonials.js" type="module"></script>
+    <script src="scripts/lead-form.js" type="module"></script>
+  </body>
+</html>

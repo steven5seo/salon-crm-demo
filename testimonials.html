@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Testimonials | Elevate Salon CRM Demo</title>
+    <meta
+      name="description"
+      content="Hear from salon franchise leaders using Elevate CRM to accelerate lead capture, membership growth, and stylist performance."
+    />
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f487-200d-2640-fe0f.svg" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Material+Symbols+Rounded" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.4/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} // eslint-disable-line
+    </script>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <a href="#main" class="absolute left-4 top-4 bg-white text-charcoal-900 px-3 py-2 rounded-full shadow focus:not-sr-only sr-only focus:sr-only">Skip to main content</a>
+    <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b border-sand-100">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex items-center justify-between py-4">
+          <a href="index.html" class="flex items-center gap-3 text-xl font-semibold text-charcoal-900">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-rose-500 text-white">
+              <span class="material-symbols-rounded" aria-hidden="true">content_cut</span>
+            </span>
+            Elevate CRM
+          </a>
+          <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-charcoal-700">
+            <a href="index.html" class="hover:text-rose-600">Home</a>
+            <a href="services.html" class="hover:text-rose-600">Services</a>
+            <a href="stylists.html" class="hover:text-rose-600">Stylists</a>
+            <a href="locations.html" class="hover:text-rose-600">Locations</a>
+            <a href="testimonials.html" class="text-rose-600">Testimonials</a>
+            <a href="index.html#lead" class="hover:text-rose-600">Contact</a>
+          </nav>
+          <div class="flex items-center gap-4">
+            <a href="index.html#lead" class="hidden md:inline-flex primary-btn text-sm">Get a free consultation</a>
+            <button id="nav-toggle" class="md:hidden inline-flex items-center justify-center p-2 rounded-full border border-sand-200 text-charcoal-700" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation">
+              <span class="material-symbols-rounded" aria-hidden="true">menu</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden border-t border-sand-100 bg-white/95">
+        <nav class="px-4 py-4 flex flex-col gap-3 text-sm font-medium text-charcoal-700">
+          <a href="index.html" class="hover:text-rose-600">Home</a>
+          <a href="services.html" class="hover:text-rose-600">Services</a>
+          <a href="stylists.html" class="hover:text-rose-600">Stylists</a>
+          <a href="locations.html" class="hover:text-rose-600">Locations</a>
+          <a href="testimonials.html" class="text-rose-600">Testimonials</a>
+          <a href="index.html#lead" class="hover:text-rose-600">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="flex-1">
+      <section class="bg-hero border-b border-sand-100">
+        <div class="max-w-4xl mx-auto px-4 py-20 text-center space-y-6">
+          <h1 class="text-4xl font-bold text-charcoal-900">Proof that guest journeys can feel personal at scale.</h1>
+          <p class="text-lg text-charcoal-600">Elevate CRM equips marketers and operators with insights, automations, and previews they can trust. Here’s what franchise leaders have to say.</p>
+          <a href="index.html#lead" class="primary-btn justify-center">Book a guided demo</a>
+        </div>
+      </section>
+
+      <section class="py-20">
+        <div class="max-w-5xl mx-auto px-4 space-y-12">
+          <div id="testimonial-wrapper" class="relative overflow-hidden rounded-3xl border border-sand-200 bg-white/50" tabindex="0">
+            <div id="testimonial-track" class="flex transition-transform duration-500" data-active-index="0"></div>
+            <div class="flex justify-center gap-3 py-6" id="testimonial-indicators" role="tablist" aria-label="Testimonials"></div>
+          </div>
+          <div class="grid md:grid-cols-2 gap-8">
+            <article class="bg-white rounded-3xl border border-sand-200 p-6 shadow-sm">
+              <h2 class="text-xl font-semibold text-charcoal-900">Why it resonates in demos</h2>
+              <p class="mt-3 text-charcoal-600">“Account executives can capture a lead live, refresh the dashboard, and show segments in 10 seconds. It’s the ‘aha’ moment for owners.”</p>
+              <p class="mt-4 text-sm text-charcoal-500">— Demo Strategy Team</p>
+            </article>
+            <article class="bg-white rounded-3xl border border-sand-200 p-6 shadow-sm">
+              <h2 class="text-xl font-semibold text-charcoal-900">What members love</h2>
+              <p class="mt-3 text-charcoal-600">“Guests feel remembered. They walk in quoting the SMS they just received, and stylists know exactly which offer brought them back.”</p>
+              <p class="mt-4 text-sm text-charcoal-500">— Franchise Success Manager</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-charcoal-900 text-sand-50">
+      <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8 text-sm">
+        <div class="space-y-3">
+          <p class="text-base font-semibold text-white">Elevate CRM for Salons</p>
+          <p class="text-sand-200">Simulated data for demo purposes only. No personal information stored on servers.</p>
+        </div>
+        <div class="space-y-3">
+          <p class="font-semibold text-white">Franchise resources</p>
+          <ul class="space-y-2 text-sand-200">
+            <li><a href="services.html" class="hover:text-white">Services & Pricing</a></li>
+            <li><a href="locations.html" class="hover:text-white">Locations</a></li>
+            <li><a href="stylists.html" class="hover:text-white">Stylists</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <p class="font-semibold text-white">Company</p>
+          <ul class="space-y-2 text-sand-200">
+            <li><a href="privacy.html" class="hover:text-white">Privacy</a></li>
+            <li><a href="terms.html" class="hover:text-white">Terms</a></li>
+            <li><a href="mailto:demo@elevatecrm.com" class="hover:text-white">Contact sales</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <p class="font-semibold text-white">Connect</p>
+          <div class="flex gap-4 text-xl text-sand-200">
+            <a href="https://www.linkedin.com" aria-label="LinkedIn" class="hover:text-white">in</a>
+            <a href="https://www.instagram.com" aria-label="Instagram" class="hover:text-white">IG</a>
+            <a href="https://www.tiktok.com" aria-label="TikTok" class="hover:text-white">TT</a>
+          </div>
+          <a href="demo.html" class="text-sand-200 hover:text-white text-xs" rel="nofollow">Demo dashboard</a>
+        </div>
+      </div>
+      <div class="px-4 py-4 text-center text-xs text-sand-400">© 2025 Elevate CRM Demo. Crafted for showcase purposes.</div>
+    </footer>
+
+    <script src="scripts/navigation.js" type="module"></script>
+    <script src="scripts/testimonials.js" type="module"></script>
+  </body>
+</html>

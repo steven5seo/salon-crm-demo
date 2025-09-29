@@ -1,0 +1,42 @@
+[
+  {
+    "id": "st_riley",
+    "name": "Riley Thompson",
+    "photo": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80",
+    "locations": ["Austin - Downtown", "Austin - North"],
+    "specialties": ["Balayage", "Short Cuts"],
+    "yearsExperience": 7,
+    "badges": ["Color Pro", "Educator"],
+    "bio": "Educator and award-winning colorist known for effortless lived-in looks."
+  },
+  {
+    "id": "st_charlie",
+    "name": "Charlie Rivera",
+    "photo": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=600&q=80",
+    "locations": ["Houston - Heights"],
+    "specialties": ["Curl Specialist", "Treatments"],
+    "yearsExperience": 9,
+    "badges": ["Texture Expert"],
+    "bio": "Curl whisperer with a focus on healthy hair rituals and scalp wellness."
+  },
+  {
+    "id": "st_avery",
+    "name": "Avery Kim",
+    "photo": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80",
+    "locations": ["Dallas - Uptown"],
+    "specialties": ["Extensions", "Color Correction"],
+    "yearsExperience": 11,
+    "badges": ["Extension Artist", "VIP Concierge"],
+    "bio": "Transforms looks with premium extensions and personalized color journeys."
+  },
+  {
+    "id": "st_maya",
+    "name": "Maya Patel",
+    "photo": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80",
+    "locations": ["Austin - Downtown"],
+    "specialties": ["Bridal Styling", "Blowouts"],
+    "yearsExperience": 6,
+    "badges": ["Bridal Lead"],
+    "bio": "Bridal styling lead crafting statement looks for on-camera confidence."
+  }
+]

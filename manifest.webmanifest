@@ -1,0 +1,15 @@
+{
+  "name": "Salon CRM Demo",
+  "short_name": "SalonCRM",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fdf9f4",
+  "theme_color": "#d6456e",
+  "icons": [
+    {
+      "src": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f487-200d-2640-fe0f.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

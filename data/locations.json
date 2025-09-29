@@ -1,0 +1,46 @@
+[
+  {
+    "id": "loc_austin_downtown",
+    "name": "Austin - Downtown",
+    "address": "501 Congress Ave, Austin, TX",
+    "phone": "512-555-0145",
+    "hours": "Mon-Sat 8a-8p",
+    "services": ["Color Studio", "Luxury Blowouts", "Membership Lounge"],
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78701"
+  },
+  {
+    "id": "loc_austin_north",
+    "name": "Austin - North",
+    "address": "11800 Research Blvd, Austin, TX",
+    "phone": "512-555-0182",
+    "hours": "Mon-Fri 9a-7p, Sat 9a-5p",
+    "services": ["Family Cuts", "Texture Lab", "Express Styling"],
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78759"
+  },
+  {
+    "id": "loc_dallas_uptown",
+    "name": "Dallas - Uptown",
+    "address": "2700 McKinney Ave, Dallas, TX",
+    "phone": "214-555-0122",
+    "hours": "Daily 9a-8p",
+    "services": ["Extension Bar", "Color Correction", "VIP Suite"],
+    "city": "Dallas",
+    "state": "TX",
+    "zip": "75204"
+  },
+  {
+    "id": "loc_houston_heights",
+    "name": "Houston - Heights",
+    "address": "1502 Yale St, Houston, TX",
+    "phone": "713-555-0107",
+    "hours": "Mon-Sat 8a-8p",
+    "services": ["Curl Collective", "Men's Grooming", "Scalp Spa"],
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77008"
+  }
+]

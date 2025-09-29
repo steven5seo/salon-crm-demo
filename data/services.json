@@ -1,0 +1,37 @@
+[
+  {
+    "id": "svc_color_refresh",
+    "name": "Color Refresh & Gloss",
+    "description": "Revive tone and shine with a stylist-customized gloss and hydration boost.",
+    "priceRange": "$120 - $180",
+    "tags": ["Color", "Membership Eligible"]
+  },
+  {
+    "id": "svc_signature_cut",
+    "name": "Signature Cut & Finish",
+    "description": "Precision cut with blowout styling and personalized home care plan.",
+    "priceRange": "$85 - $135",
+    "tags": ["Cut", "Styling"]
+  },
+  {
+    "id": "svc_extension_volume",
+    "name": "Volume Extension Package",
+    "description": "Seamless extensions with maintenance program and VIP lounge access.",
+    "priceRange": "$450 - $900",
+    "tags": ["Extensions", "VIP"]
+  },
+  {
+    "id": "svc_men_groom",
+    "name": "Modern Men's Grooming",
+    "description": "Clipper + scissor blend, hot towel finish, and scalp therapy add-on.",
+    "priceRange": "$65 - $95",
+    "tags": ["Cut", "Treatments"]
+  },
+  {
+    "id": "svc_membership",
+    "name": "Blowout Society Membership",
+    "description": "2 monthly blowouts, product savings, and surprise upgrades for loyal guests.",
+    "priceRange": "$89 / month",
+    "tags": ["Membership", "Styling"]
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ld_001",
+    "firstName": "Jordan",
+    "lastName": "Lee",
+    "email": "jordan.lee@example.com",
+    "phone": "",
+    "preferredLocation": "Austin - Downtown",
+    "interestedServices": ["Color", "Cut"],
+    "membership": "VIP",
+    "lastVisit": "2025-03-15",
+    "createdAt": "2025-04-01T13:45:00Z"
+  },
+  {
+    "id": "ld_002",
+    "firstName": "Alex",
+    "lastName": "Nguyen",
+    "email": "alex.nguyen@example.com",
+    "phone": "5125550199",
+    "preferredLocation": "Austin - North",
+    "interestedServices": ["Styling", "Extensions"],
+    "membership": "Signature",
+    "lastVisit": "2025-04-05",
+    "createdAt": "2025-04-08T09:20:00Z"
+  },
+  {
+    "id": "ld_003",
+    "firstName": "Morgan",
+    "lastName": "Patel",
+    "email": "morgan.patel@example.com",
+    "phone": "",
+    "preferredLocation": "Dallas - Uptown",
+    "interestedServices": ["Color"],
+    "membership": "New",
+    "lastVisit": "2025-02-22",
+    "createdAt": "2025-03-30T21:05:00Z"
+  },
+  {
+    "id": "ld_004",
+    "firstName": "Jamie",
+    "lastName": "Rivera",
+    "email": "jamie.rivera@example.com",
+    "phone": "2145550188",
+    "preferredLocation": "Houston - Heights",
+    "interestedServices": ["Cut", "Treatments"],
+    "membership": "VIP",
+    "lastVisit": "2025-01-12",
+    "createdAt": "2025-03-11T16:30:00Z"
+  }
+]

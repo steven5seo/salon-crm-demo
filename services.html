@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Services & Pricing | Elevate Salon CRM Demo</title>
+    <meta
+      name="description"
+      content="Explore signature services, memberships, and upsell packages that our CRM promotes for salon franchises."
+    />
+    <meta property="og:title" content="Salon CRM Demo Services" />
+    <meta
+      property="og:description"
+      content="Color, cut, membership, and VIP offers—see how Elevate CRM activates every service line."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80" />
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f487-200d-2640-fe0f.svg" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Material+Symbols+Rounded" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.4/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} // eslint-disable-line
+    </script>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <a href="#main" class="absolute left-4 top-4 bg-white text-charcoal-900 px-3 py-2 rounded-full shadow focus:not-sr-only sr-only focus:sr-only">Skip to main content</a>
+    <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b border-sand-100">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex items-center justify-between py-4">
+          <a href="index.html" class="flex items-center gap-3 text-xl font-semibold text-charcoal-900">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-rose-500 text-white">
+              <span class="material-symbols-rounded" aria-hidden="true">content_cut</span>
+            </span>
+            Elevate CRM
+          </a>
+          <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-charcoal-700">
+            <a href="index.html" class="hover:text-rose-600">Home</a>
+            <a href="services.html" class="text-rose-600">Services</a>
+            <a href="stylists.html" class="hover:text-rose-600">Stylists</a>
+            <a href="locations.html" class="hover:text-rose-600">Locations</a>
+            <a href="testimonials.html" class="hover:text-rose-600">Testimonials</a>
+            <a href="index.html#lead" class="hover:text-rose-600">Contact</a>
+          </nav>
+          <div class="flex items-center gap-4">
+            <a href="index.html#lead" class="hidden md:inline-flex primary-btn text-sm">Get a free consultation</a>
+            <button id="nav-toggle" class="md:hidden inline-flex items-center justify-center p-2 rounded-full border border-sand-200 text-charcoal-700" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation">
+              <span class="material-symbols-rounded" aria-hidden="true">menu</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden border-t border-sand-100 bg-white/95">
+        <nav class="px-4 py-4 flex flex-col gap-3 text-sm font-medium text-charcoal-700">
+          <a href="index.html" class="hover:text-rose-600">Home</a>
+          <a href="services.html" class="text-rose-600">Services</a>
+          <a href="stylists.html" class="hover:text-rose-600">Stylists</a>
+          <a href="locations.html" class="hover:text-rose-600">Locations</a>
+          <a href="testimonials.html" class="hover:text-rose-600">Testimonials</a>
+          <a href="index.html#lead" class="hover:text-rose-600">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="flex-1">
+      <section class="bg-hero border-b border-sand-100">
+        <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-[1.2fr_1fr] gap-10 items-center">
+          <div class="space-y-6">
+            <h1 class="text-4xl font-bold text-charcoal-900">Services that sell themselves—when the right guests see them.</h1>
+            <p class="text-lg text-charcoal-600">Elevate CRM keeps every salon location aligned on pricing, add-ons, and memberships so marketers can launch campaigns without hunting down spreadsheets.</p>
+            <div class="flex flex-wrap gap-4 text-sm text-charcoal-600">
+              <span class="inline-flex items-center gap-2"><span class="material-symbols-rounded text-rose-500" aria-hidden="true">precision_manufacturing</span>Centralized menu management</span>
+              <span class="inline-flex items-center gap-2"><span class="material-symbols-rounded text-rose-500" aria-hidden="true">mail</span>One-click campaign previews</span>
+              <span class="inline-flex items-center gap-2"><span class="material-symbols-rounded text-rose-500" aria-hidden="true">monitoring</span>Performance by location</span>
+            </div>
+          </div>
+          <aside class="bg-white rounded-3xl border border-sand-200 shadow-lg p-6 space-y-4">
+            <h2 class="text-xl font-semibold text-charcoal-900">Quick links</h2>
+            <ul class="space-y-3 text-charcoal-600" id="service-links">
+              <li><a href="#svc_color_refresh" class="hover:text-rose-600">Color Refresh & Gloss</a></li>
+              <li><a href="#svc_signature_cut" class="hover:text-rose-600">Signature Cut & Finish</a></li>
+              <li><a href="#svc_extension_volume" class="hover:text-rose-600">Volume Extension Package</a></li>
+              <li><a href="#svc_men_groom" class="hover:text-rose-600">Modern Men's Grooming</a></li>
+              <li><a href="#svc_membership" class="hover:text-rose-600">Blowout Society Membership</a></li>
+            </ul>
+            <a href="index.html#lead" class="primary-btn w-full justify-center">Plan a revenue sprint</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="section-heading mb-8">Featured experiences</h2>
+          <div id="services-grid" class="grid md:grid-cols-2 gap-8"></div>
+        </div>
+      </section>
+
+      <section class="py-16 bg-sand-50 border-y border-sand-100">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+          <div class="space-y-4">
+            <h2 class="section-heading">Memberships that boost retention by 28%</h2>
+            <p class="text-charcoal-600">Bundle blowouts, treatments, and retail perks into automated journeys. Our CRM tracks utilization so you can identify churn risks before they leave.</p>
+            <ul class="space-y-3 text-charcoal-600">
+              <li class="flex gap-3"><span class="material-symbols-rounded text-rose-500" aria-hidden="true">auto_graph</span>Spot low-frequency guests instantly</li>
+              <li class="flex gap-3"><span class="material-symbols-rounded text-rose-500" aria-hidden="true">redeem</span>Trigger automated surprise-and-delight offers</li>
+              <li class="flex gap-3"><span class="material-symbols-rounded text-rose-500" aria-hidden="true">forum</span>Sync campaign scripts to every stylist station</li>
+            </ul>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=900&q=80"
+            alt="Stylist consulting with a guest"
+            class="rounded-3xl shadow-lg border border-sand-200"
+            loading="lazy"
+            width="600"
+            height="420"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-charcoal-900 text-sand-50">
+      <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8 text-sm">
+        <div class="space-y-3">
+          <p class="text-base font-semibold text-white">Elevate CRM for Salons</p>
+          <p class="text-sand-200">Simulated data for demo purposes only. No personal information stored on servers.</p>
+        </div>
+        <div class="space-y-3">
+          <p class="font-semibold text-white">Franchise resources</p>
+          <ul class="space-y-2 text-sand-200">
+            <li><a href="services.html" class="hover:text-white">Services & Pricing</a></li>
+            <li><a href="locations.html" class="hover:text-white">Locations</a></li>
+            <li><a href="stylists.html" class="hover:text-white">Stylists</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <p class="font-semibold text-white">Company</p>
+          <ul class="space-y-2 text-sand-200">
+            <li><a href="privacy.html" class="hover:text-white">Privacy</a></li>
+            <li><a href="terms.html" class="hover:text-white">Terms</a></li>
+            <li><a href="mailto:demo@elevatecrm.com" class="hover:text-white">Contact sales</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <p class="font-semibold text-white">Connect</p>
+          <div class="flex gap-4 text-xl text-sand-200">
+            <a href="https://www.linkedin.com" aria-label="LinkedIn" class="hover:text-white">in</a>
+            <a href="https://www.instagram.com" aria-label="Instagram" class="hover:text-white">IG</a>
+            <a href="https://www.tiktok.com" aria-label="TikTok" class="hover:text-white">TT</a>
+          </div>
+          <a href="demo.html" class="text-sand-200 hover:text-white text-xs" rel="nofollow">Demo dashboard</a>
+        </div>
+      </div>
+      <div class="px-4 py-4 text-center text-xs text-sand-400">© 2025 Elevate CRM Demo. Crafted for showcase purposes.</div>
+    </footer>
+
+    <script src="scripts/navigation.js" type="module"></script>
+    <script src="scripts/services.js" type="module"></script>
+  </body>
+</html>

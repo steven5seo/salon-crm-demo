@@ -1,0 +1,7 @@
+{
+  "ga4MeasurementId": "G-XXXXXXXXXX",
+  "features": {
+    "enableSmsPreview": true,
+    "enableAnalytics": true
+  }
+}

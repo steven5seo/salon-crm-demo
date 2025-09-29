@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ct_new_color",
+    "name": "New Color Guests",
+    "email": {
+      "subject": "First color, first wow",
+      "headline": "Color Confidence Starts Here",
+      "body": "See why 12k guests trust our color pros. Enjoy a gloss upgrade when you book by Friday.",
+      "cta": "Schedule my consult"
+    },
+    "sms": {
+      "text": "Ready to go bold? Book color by Friday and your gloss upgrade is on us. Reply STOP to opt out."
+    },
+    "defaultFilters": {"interest": "Color", "lastVisitDaysGt": 30}
+  },
+  {
+    "id": "ct_vip_reactivation",
+    "name": "VIP Reactivation",
+    "email": {
+      "subject": "We miss you, VIP",
+      "headline": "VIP Offer: 20% Off Color",
+      "body": "Reserve with your favorite artist and receive a luxe treatment on us.",
+      "cta": "Book VIP refresh"
+    },
+    "sms": {
+      "text": "VIP perk unlocked: 20% off color this week. Tap to reserve—reply STOP to opt out."
+    },
+    "defaultFilters": {"membership": "VIP", "lastVisitDaysGt": 60}
+  },
+  {
+    "id": "ct_membership",
+    "name": "Membership Upgrade",
+    "email": {
+      "subject": "Unlock unlimited styling",
+      "headline": "Blowout Society Awaits",
+      "body": "Members save 25% on retail and get surprise upgrades every month.",
+      "cta": "Upgrade my membership"
+    },
+    "sms": {
+      "text": "Fresh styles on repeat—membership includes 2 blowouts monthly. Join now! Reply STOP to opt out."
+    },
+    "defaultFilters": {"membership": "Signature"}
+  }
+]

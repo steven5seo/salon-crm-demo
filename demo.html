@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Demo Dashboard | Elevate Salon CRM</title>
+    <meta
+      name="description"
+      content="Interactive front-end demo of the Elevate Salon CRM dashboard featuring leads, segments, and campaign previews."
+    />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f487-200d-2640-fe0f.svg" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Material+Symbols+Rounded" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link rel="stylesheet" href="styles/theme.css" />
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} // eslint-disable-line
+    </script>
+  </head>
+  <body class="min-h-screen bg-sand-50">
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-sand-100">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <a href="index.html" class="inline-flex items-center gap-2 text-sm text-charcoal-500 hover:text-rose-600">
+            <span class="material-symbols-rounded" aria-hidden="true">arrow_back</span>
+            Back to marketing site
+          </a>
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-rose-500 text-white">
+            <span class="material-symbols-rounded" aria-hidden="true">dashboard</span>
+          </span>
+          <div>
+            <p class="text-sm uppercase tracking-wider text-charcoal-500">Elevate CRM Demo</p>
+            <h1 class="text-xl font-semibold text-charcoal-900">Salon Franchise Command Center</h1>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="inline-flex items-center gap-2 text-sm text-charcoal-500"><span class="material-symbols-rounded text-rose-500" aria-hidden="true">bolt</span>Front-end only</span>
+          <a href="index.html#lead" class="primary-btn text-sm">Capture a lead</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-10 space-y-8">
+      <p class="text-charcoal-600 text-sm">
+        Pro tip: Submit the marketing form first, then refresh this page or press “Refresh leads” to see the new record. Use the tabs to walk through the narrative: capture → segment → preview campaign.
+      </p>
+
+      <div class="bg-white border border-sand-200 rounded-3xl shadow-sm overflow-hidden">
+        <div class="border-b border-sand-100 bg-sand-50">
+          <nav class="flex flex-wrap" role="tablist" aria-label="Demo dashboard views">
+            <button class="tab-btn" data-tab="leads" role="tab" aria-selected="true">Leads</button>
+            <button class="tab-btn" data-tab="segments" role="tab" aria-selected="false">Segments</button>
+            <button class="tab-btn" data-tab="campaigns" role="tab" aria-selected="false">Campaigns</button>
+          </nav>
+        </div>
+        <section id="tab-leads" class="tab-panel p-6 md:p-8 space-y-6" role="tabpanel">
+          <div class="flex flex-wrap items-center justify-between gap-4">
+            <div>
+              <h2 class="text-2xl font-semibold text-charcoal-900">Recent leads</h2>
+              <p class="text-sm text-charcoal-500">Leads combine seeded demo records with anything captured locally.</p>
+            </div>
+            <button id="refresh-leads" class="inline-flex items-center gap-2 rounded-full border border-sand-200 px-4 py-2 text-sm font-medium text-charcoal-700 hover:text-rose-600">
+              <span class="material-symbols-rounded text-rose-500" aria-hidden="true">refresh</span>
+              Refresh leads
+            </button>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-sand-100 text-sm">
+              <thead class="bg-sand-50 text-charcoal-500 uppercase tracking-wide text-xs">
+                <tr>
+                  <th scope="col" class="px-4 py-3 text-left">Lead</th>
+                  <th scope="col" class="px-4 py-3 text-left">Email</th>
+                  <th scope="col" class="px-4 py-3 text-left">Location</th>
+                  <th scope="col" class="px-4 py-3 text-left">Interests</th>
+                  <th scope="col" class="px-4 py-3 text-left">Membership</th>
+                  <th scope="col" class="px-4 py-3 text-left">Captured</th>
+                </tr>
+              </thead>
+              <tbody id="leads-table-body" class="divide-y divide-sand-100 text-charcoal-700"></tbody>
+            </table>
+            <div id="leads-empty" class="hidden text-center py-10 text-charcoal-500">No leads yet. Capture a lead on the marketing site to see it here.</div>
+          </div>
+        </section>
+
+        <section id="tab-segments" class="tab-panel hidden p-6 md:p-8 space-y-6" role="tabpanel">
+          <div class="flex flex-wrap items-center justify-between gap-4">
+            <div>
+              <h2 class="text-2xl font-semibold text-charcoal-900">Segment builder</h2>
+              <p class="text-sm text-charcoal-500">Mix and match filters to show franchise-ready targeting. Segment size updates instantly.</p>
+            </div>
+            <div class="text-sm text-charcoal-500">Segment size: <span id="segment-size" data-segment-size class="font-semibold text-charcoal-900">0 leads</span></div>
+          </div>
+          <div class="grid lg:grid-cols-[320px_1fr] gap-8">
+            <aside class="space-y-6">
+              <div>
+                <h3 class="text-sm font-semibold text-charcoal-900 uppercase tracking-wide">Location</h3>
+                <div id="filter-location" class="mt-3 space-y-2 text-sm text-charcoal-600"></div>
+              </div>
+              <div>
+                <h3 class="text-sm font-semibold text-charcoal-900 uppercase tracking-wide">Interests</h3>
+                <div id="filter-interest" class="mt-3 space-y-2 text-sm text-charcoal-600"></div>
+              </div>
+              <div>
+                <h3 class="text-sm font-semibold text-charcoal-900 uppercase tracking-wide">Membership</h3>
+                <div id="filter-membership" class="mt-3 space-y-2 text-sm text-charcoal-600"></div>
+              </div>
+              <div>
+                <h3 class="text-sm font-semibold text-charcoal-900 uppercase tracking-wide">Last visit</h3>
+                <select id="filter-last-visit" class="mt-3 w-full rounded-2xl border border-sand-200 px-4 py-2 text-sm text-charcoal-700">
+                  <option value="any">Any time</option>
+                  <option value="30+">30+ days</option>
+                  <option value="60+">60+ days</option>
+                  <option value="90+">90+ days</option>
+                  <option value="never">Never visited</option>
+                </select>
+              </div>
+            </aside>
+            <div class="bg-sand-50 border border-sand-100 rounded-3xl p-6">
+              <h3 class="text-lg font-semibold text-charcoal-900">Preview results</h3>
+              <div id="segment-results" class="mt-4 space-y-3 text-charcoal-600">Apply filters to preview leads.</div>
+            </div>
+          </div>
+        </section>
+
+        <section id="tab-campaigns" class="tab-panel hidden p-6 md:p-8 space-y-6" role="tabpanel">
+          <div class="flex flex-wrap items-center justify-between gap-4">
+            <div>
+              <h2 class="text-2xl font-semibold text-charcoal-900">Campaign studio</h2>
+              <p class="text-sm text-charcoal-500">Pick a template, personalize the copy, and preview email + SMS instantly.</p>
+            </div>
+            <div class="text-sm text-charcoal-500">Estimated reach: <span id="segment-size-campaign" data-segment-size class="font-semibold text-charcoal-900">0 leads</span></div>
+          </div>
+          <div class="grid lg:grid-cols-[320px_1fr] gap-8">
+            <aside class="space-y-6">
+              <div>
+                <label class="block text-sm font-medium text-charcoal-700"
+                  >Campaign template
+                  <select id="campaign-template" class="mt-1 w-full rounded-2xl border border-sand-200 px-4 py-3 text-sm"></select>
+                </label>
+              </div>
+              <div class="space-y-4">
+                <label class="block text-sm font-medium text-charcoal-700"
+                  >Email subject
+                  <input type="text" id="campaign-subject" class="mt-1 w-full rounded-2xl border border-sand-200 px-4 py-3 text-sm" />
+                </label>
+                <label class="block text-sm font-medium text-charcoal-700"
+                  >Headline
+                  <input type="text" id="campaign-headline" class="mt-1 w-full rounded-2xl border border-sand-200 px-4 py-3 text-sm" />
+                </label>
+                <label class="block text-sm font-medium text-charcoal-700"
+                  >Body
+                  <textarea id="campaign-body" rows="4" class="mt-1 w-full rounded-2xl border border-sand-200 px-4 py-3 text-sm"></textarea>
+                </label>
+                <label class="block text-sm font-medium text-charcoal-700"
+                  >CTA / Offer
+                  <input type="text" id="campaign-offer" class="mt-1 w-full rounded-2xl border border-sand-200 px-4 py-3 text-sm" />
+                </label>
+                <label class="block text-sm font-medium text-charcoal-700"
+                  >SMS copy
+                  <textarea id="campaign-sms" rows="3" class="mt-1 w-full rounded-2xl border border-sand-200 px-4 py-3 text-sm"></textarea>
+                </label>
+              </div>
+              <button id="preview-campaign" class="primary-btn w-full justify-center">Preview campaign</button>
+            </aside>
+            <div class="space-y-6">
+              <div>
+                <h3 class="text-lg font-semibold text-charcoal-900">Email preview</h3>
+                <div id="email-preview" class="mt-3"></div>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-charcoal-900">SMS preview</h3>
+                <div id="sms-preview" class="mt-3"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="py-6 text-center text-xs text-charcoal-500">
+      Demo only — refresh to reset state. Clear leads via <code>localStorage.removeItem('demo_leads')</code>.
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const buttons = document.querySelectorAll('.tab-btn');
+        const panels = document.querySelectorAll('.tab-panel');
+        function activateTab(tabName) {
+          buttons.forEach((btn) => {
+            const active = btn.dataset.tab === tabName;
+            btn.className = `tab-btn ${active ? 'bg-white text-rose-600 border-b-2 border-rose-500' : ''}`.trim();
+            btn.setAttribute('aria-selected', active.toString());
+          });
+          panels.forEach((panel) => {
+            panel.classList.toggle('hidden', panel.id !== `tab-${tabName}`);
+          });
+        }
+        buttons.forEach((btn) =>
+          btn.addEventListener('click', () => {
+            activateTab(btn.dataset.tab);
+          })
+        );
+        activateTab('leads');
+      });
+    </script>
+    <script src="scripts/navigation.js" type="module"></script>
+    <script src="scripts/demo-dashboard.js" type="module"></script>
+  </body>
+</html>
